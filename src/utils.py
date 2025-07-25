@@ -16,7 +16,7 @@ def get_url(kind: str):
     :rtype: str
     :raises UnknownTypeError: 인자 kind가 옳지 못한 경우에 발생
     """
-    url = f"{ServerHandler.save_url}/v2/transfers/{transfer_code}/reception"  # type: ignore
+    # url = f"{ServerHandler.save_url}/v2/transfers/{transfer_code}/reception"  # type: ignore
     if kind == "save":
         return "https://nyanko-save.ponosgames.com"
     elif kind == "auth":
